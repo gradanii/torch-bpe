@@ -31,3 +31,11 @@ X = aa
 Y = ab
 Z = XY
 ```
+
+## Modified Algorithm
+The modified/modern BPE algorithm is used in almost all LLM tokenisers, (like GPT-3.5, GPT-4 etc.).
+
+### Why do we use this modified algorithm?
+1. Instead of flagging certain words as 'Out of Vocabulary' (OOV), it breaks the unknown word down into known words which it can further tokenise.
+2. Reduces the number of tokens by merging frequent pairs.
+3. Works across multiple languages.
